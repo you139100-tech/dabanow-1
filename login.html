@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - BDANOW</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { margin: 0; font-family: 'Segoe UI', sans-serif; background-color: #f4f7f6; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        .login-box { background: white; padding: 40px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); width: 100%; max-width: 400px; text-align: center; }
+        .login-box h2 { color: #011C40; margin-bottom: 20px; }
+        .input-group { margin-bottom: 15px; text-align: left; }
+        .input-group label { display: block; margin-bottom: 5px; font-weight: bold; color: #333; }
+        .input-group input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; outline: none; box-sizing: border-box; } /* box-sizing added */
+        .btn-submit { width: 100%; padding: 12px; background: linear-gradient(135deg, #011C40 0%, #31487A 100%); color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 1rem; font-weight: bold; margin-top: 10px; }
+        .switch-login { margin-top: 20px; font-size: 0.9rem; color: #666; }
+        .switch-login a { color: #54ACBF; font-weight: bold; text-decoration: none; }
+        .switch-login a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <div class="login-box">
+        <div style="margin-bottom: 20px;">
+            <img src="Smart.png" alt="Logo" style="height: 60px;">
+        </div>
+        <h2>Bienvenue sur BDANOW</h2>
+        
+        <form action="dashboard.html"> <div class="input-group">
+                <label>Email</label>
+                <input type="email" placeholder="votre@email.com" required>
+            </div>
+            <div class="input-group">
+                <label>Mot de passe</label>
+                <input type="password" placeholder="********" required>
+            </div>
+            <button type="submit" class="btn-submit">Se Connecter</button>
+        </form>
+        
+        <div class="switch-login">
+            <p>Pas encore de compte ? <a href="register.html">Créer un compte</a></p>
+            
+            <p style="margin-top: 15px;">
+                <a href="index.html" style="color: #666;">← Retour à l'accueil</a>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
